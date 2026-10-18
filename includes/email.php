@@ -12,16 +12,16 @@ function enviarEmail($destino, $assunto, $mensagem){
     try {
 
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = (getenv('SMTP_HOST') ?: '');
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'seuemail@gmail.com';
-        $mail->Password = 'senha_app_google';
+        $mail->Username = (getenv('SMTP_USERNAME') ?: '');
+        $mail->Password = (getenv('SMTP_PASSWORD') ?: '');
 
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->SMTPSecure = (getenv('SMTP_SECURITY') ?: 'tls');
+        $mail->Port = (int)(getenv('SMTP_PORT') ?: '587');
 
-        $mail->setFrom('seuemail@gmail.com', 'Pedidos Online');
+        $mail->setFrom(getenv('SMTP_FROM_EMAIL') ?: $mail->Username, getenv('SMTP_FROM_NAME') ?: 'Pedidos');
 
         $mail->addAddress($destino);
 
