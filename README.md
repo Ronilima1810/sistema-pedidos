@@ -22,3 +22,14 @@ O preview é uma **simulação de portfólio**, independente do PHP e do banco d
 ## Segurança
 
 O código-fonte deste repositório não deve ser implantado em produção sem revisão de autenticação, tratamento de dados e credenciais. A demonstração visual não usa nenhum componente sensível.
+
+## Configuração local necessária
+
+Para o envio de e-mails e a exibição de dados de pagamento, configure as variáveis de ambiente **no servidor, nunca no Git**:
+
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURITY`
+- `SMTP_USERNAME`, `SMTP_PASSWORD`
+- `SMTP_FROM_EMAIL`, `SMTP_FROM_NAME`
+- `PIX_KEY`, `PIX_HOLDER_NAME`, `PIX_BANK_NAME`
+
+As credenciais e os dados PIX que constavam em arquivos versionados foram substituídos por referências a essas variáveis. **Credenciais antigas presentes no histórico do Git devem ser revogadas/rotacionadas.** Os envios de e-mail e a apresentação de dados PIX dependem da configuração do ambiente de execução.
