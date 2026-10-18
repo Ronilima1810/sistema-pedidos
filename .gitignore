@@ -1,0 +1,17 @@
+# Dados locais e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+storage/private/
+backups/
+*.log
+vendor/
+node_modules/
