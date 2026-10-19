@@ -1,12 +1,25 @@
-# Sistema de Pedidos — Portfólio
+# Sistema de Pedidos — Lumus PDV Desktop
 
-[![Abrir demonstração](https://img.shields.io/badge/▶_Preview_interativo-187e91?style=for-the-badge)](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=loja)
+**Novo cliente Windows com interface de PDV/ERP, preparado para evolução futura para SaaS.**
+
+[![Visualizar PDV](https://img.shields.io/badge/VISUALIZAR-PDV_DESKTOP-0466B0?style=for-the-badge)](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/pdv/)
+[![Código do cliente](https://img.shields.io/badge/CÓDIGO-ELECTRON_DESKTOP-233D59?style=for-the-badge)](https://github.com/Ronilima1810/sistema-pedidos/tree/master/desktop-pdv)
+
+O código instalável está em [desktop-pdv/](https://github.com/Ronilima1810/sistema-pedidos/tree/master/desktop-pdv), com [instruções de instalação](https://github.com/Ronilima1810/sistema-pedidos/blob/master/desktop-pdv/README.md) e um workflow Windows para produzir o instalador. O backend PHP legado original permanece separado, sem mudanças em sua lógica.
+
+> **Status:** protótipo funcional offline, com vendas e produtos fictícios. Não está integrado a um SaaS real, emissão fiscal ou pagamentos. A identidade visual é autoral, inspirada em padrões ERP, sem copiar a SAP.
+
+---
+
+## Projeto PHP legado
+
+[![Abrir demonstração](https://img.shields.io/badge/▶_Preview_interativo-187e91?style=for-the-badge)](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/pdv/)
 
 Projeto independente de aplicação web de pedidos personalizados com estrutura em **PHP, JavaScript, CSS e MySQL**.
 
 ## Visualizar a interface
 
-[**Abrir preview visual do catálogo e carrinho**](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=loja)
+[**Abrir preview visual do catálogo e carrinho**](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/pdv/)
 
 Este projeto **não é a Torre de Pedidos do Ruby**, que possui [preview específico](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=pedidos). O preview deste repositório é uma **simulação de portfólio**, independente do PHP e do banco de dados. Os produtos e valores são fictícios. Não há cobrança, envio de pedidos ou coleta de dados pessoais.
 
