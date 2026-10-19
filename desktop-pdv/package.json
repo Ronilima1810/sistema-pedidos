@@ -1,0 +1,42 @@
+{
+  "name": "lumus-pdv-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cliente desktop PDV com UI empresarial, modo demonstração offline",
+  "main": "main.js",
+  "author": "Roni Lima",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist:win": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "online.lumustech.pdv",
+    "productName": "Lumus PDV",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
