@@ -1,0 +1,37 @@
+name: Build Lumus PDV Desktop
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'desktop-pdv/**'
+      - '.github/workflows/build-pdv.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  windows-installer:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: desktop-pdv
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build NSIS installer
+        run: npm run dist:win
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: lumus-pdv-windows-installer
+          path: desktop-pdv/dist/*.exe
+          if-no-files-found: error
