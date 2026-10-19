@@ -1,14 +1,14 @@
 # Sistema de Pedidos — Portfólio
 
-[![Abrir demonstração](https://img.shields.io/badge/▶_Preview_interativo-187e91?style=for-the-badge)](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=pedidos)
+[![Abrir demonstração](https://img.shields.io/badge/▶_Preview_interativo-187e91?style=for-the-badge)](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=loja)
 
-Projeto de aplicação web de pedidos personalizados com estrutura em **PHP, JavaScript, CSS e MySQL**.
+Projeto independente de aplicação web de pedidos personalizados com estrutura em **PHP, JavaScript, CSS e MySQL**.
 
 ## Visualizar a interface
 
-[**Abrir preview visual do catálogo e carrinho**](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=pedidos)
+[**Abrir preview visual do catálogo e carrinho**](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=loja)
 
-O preview é uma **simulação de portfólio**, independente do PHP e do banco de dados. Os produtos e valores são fictícios. Não há cobrança, envio de pedidos ou coleta de dados pessoais.
+Este projeto **não é a Torre de Pedidos do Ruby**, que possui [preview específico](https://ronilima1810.github.io/formulario-de-matricula/portfolio-demos/?demo=pedidos). O preview deste repositório é uma **simulação de portfólio**, independente do PHP e do banco de dados. Os produtos e valores são fictícios. Não há cobrança, envio de pedidos ou coleta de dados pessoais.
 
 ## Estrutura do repositório
 
